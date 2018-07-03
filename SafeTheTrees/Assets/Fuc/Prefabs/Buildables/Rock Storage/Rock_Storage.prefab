@@ -297,7 +297,6 @@ GameObject:
   - component: {fileID: 33032295266938788}
   - component: {fileID: 23803929740811266}
   - component: {fileID: 65505715522989302}
-  - component: {fileID: 208894870810919388}
   m_Layer: 0
   m_Name: Rock_Storage (1)
   m_TagString: Untagged
@@ -1755,18 +1754,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 4
   m_Center: {x: 2.5035317, y: 1.4635476e-12, z: 2.404307e-19}
---- !u!208 &208894870810919388
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1473599477439214}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 1.274, y: 1.5250001, z: 1.3390001}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 1.3390001}
-  m_TimeToStationary: 0.5

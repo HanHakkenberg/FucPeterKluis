@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 114299840100246442}
   - component: {fileID: 135768854411721104}
   - component: {fileID: 65550157823306370}
-  - component: {fileID: 208149473276554994}
   m_Layer: 0
   m_Name: Anvil
   m_TagString: Interactable
@@ -196,18 +195,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 0.14343977, z: 0}
---- !u!208 &208149473276554994
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1310648038541594}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.6918205, z: 1.17}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.6332057, z: -0.12}
-  m_TimeToStationary: 0.5

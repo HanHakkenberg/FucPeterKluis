@@ -18,41 +18,36 @@ public class Builder : MonoBehaviour {
     private Player player;
 
     private void Awake() {
-        if(instance == null) {
+        if (instance == null) {
             instance = this;
-        }
-        else {
+        } else {
             Destroy(this);
         }
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
-
     void Update() {
 
-        if(CurrentlyBuilding != null) {
+        if (CurrentlyBuilding != null) {
 
-            if(CurrentlyBuilding.itemType == Item.TypeOffItem.Crop)
-            {
+            if (CurrentlyBuilding.itemType == Item.TypeOffItem.Crop) {
                 buildRayMask = 16384; //Farmland layer
             }
-            if (CurrentlyBuilding.furniture)
-            {
+            if (CurrentlyBuilding.furniture) {
                 buildRayMask = 131072; //Building layer
             }
 
             RaycastHit rayHit;
-            if(Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out rayHit, 10000, buildRayMask)) {
-                buildRotation += Mathf.RoundToInt(Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * scrollweelSpeed);
+            if (Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out rayHit, 10000, buildRayMask)) {
+                buildRotation += Mathf.RoundToInt(Input.GetAxis("Mouse ScrollWheel")* Time.deltaTime * scrollweelSpeed);
 
-                DisplayBuild(new Vector3(0, buildRotation, 0), new Vector3(rayHit.point.x,0, rayHit.point.z));
+                DisplayBuild(new Vector3(0, buildRotation, 0), new Vector3(rayHit.point.x, 0, rayHit.point.z));
 
-                if(Physics.CheckBox(displayCollider.bounds.center, displayCollider.bounds.size / 2, CurrentBuild.transform.rotation, instance.buildCollisionMask)) {
+                if (Physics.CheckBox(rayHit.point, displayCollider.size / 2, CurrentBuild.transform.rotation, instance.buildCollisionMask)) {
                     displayMaterial.color = Color.red + new Color(0, 0, 0, -0.5f);
-                }
-                else {
+                } else {
                     displayMaterial.color = Color.blue + new Color(0, 0, 0, -0.5f);
-                    if(Input.GetButtonDown("Fire1")) {
+                    if (Input.GetButtonDown("Fire1")) {
                         PlaceBuild();
                     }
                 }
@@ -70,7 +65,7 @@ public class Builder : MonoBehaviour {
     }
 
     public void PlaceBuild() {
-        if(CurrentBuild != null && !Physics.CheckBox(displayCollider.bounds.center, displayCollider.bounds.size / 2, CurrentBuild.transform.rotation, instance.buildCollisionMask)) {
+        if (CurrentBuild != null && !Physics.CheckBox(displayCollider.bounds.center, displayCollider.bounds.size / 2, CurrentBuild.transform.rotation, instance.buildCollisionMask)) {
             ObjectPooler.instance.GetFromPool(CurrentlyBuilding.itemName, CurrentBuild.transform.position, CurrentBuild.transform.rotation);
             ObjectPooler.instance.AddToPool(CurrentlyBuilding.itemName + " Display", CurrentBuild);
 
@@ -82,14 +77,13 @@ public class Builder : MonoBehaviour {
         }
     }
 
-
     public void StopBuild() {
         buildRotation = 0;
-        if(CurrentlyBuilding != null) {
+        if (CurrentlyBuilding != null) {
             ObjectPooler.instance.AddToPool(CurrentlyBuilding.itemName + " Display", CurrentBuild);
             CurrentlyBuilding = null;
 
-            if(buildRayMask != 1024) //1024 = regular ground layer index
+            if (buildRayMask != 1024)//1024 = regular ground layer index
             {
                 buildRayMask = 1024;
             }

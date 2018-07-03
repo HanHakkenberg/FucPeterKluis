@@ -68,7 +68,6 @@ GameObject:
   - component: {fileID: 4585981398208550}
   - component: {fileID: 135434914767772972}
   - component: {fileID: 65329272030641214}
-  - component: {fileID: 208765397464966218}
   - component: {fileID: 114592649781522608}
   m_Layer: 0
   m_Name: Pot (1)
@@ -239,18 +238,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 0.14343977, z: 0}
---- !u!208 &208765397464966218
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1979689528267946}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.6918205, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.6332057, z: 0}
-  m_TimeToStationary: 0.5

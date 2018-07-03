@@ -37,7 +37,6 @@ GameObject:
   - component: {fileID: 33852380350179810}
   - component: {fileID: 23591206389525140}
   - component: {fileID: 65017388847822120}
-  - component: {fileID: 208731641764202122}
   m_Layer: 0
   m_Name: Wobbly_Table
   m_TagString: Untagged
@@ -52,8 +51,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1004288604218540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.18, y: 0.752, z: -37.601}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 26.67, y: 0.752, z: -47.61}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4830204092764652}
   m_Father: {fileID: 0}
@@ -126,18 +125,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4471552, y: 2.1971512, z: 3.8166027}
   m_Center: {x: -0.010714531, y: -0.0059113503, z: 1.1583014}
---- !u!208 &208731641764202122
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1043898821547266}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.72400004, y: 1.0990001, z: 0.402}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -0.011000001, y: -0.006, z: -0.347}
-  m_TimeToStationary: 0.5

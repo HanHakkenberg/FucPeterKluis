@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 114917547297556120}
   - component: {fileID: 135044170456224400}
   - component: {fileID: 65742891233801632}
-  - component: {fileID: 208693267169474516}
   m_Layer: 0
   m_Name: Oven
   m_TagString: Interactable
@@ -334,7 +333,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8fb0fe11647d5e64b80426f56489bed5, type: 2}
+  - {fileID: 2100000, guid: 011a049b11dfb3c45b0d5df1d4d24c30, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -402,7 +401,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1344777434850048}
-  m_Mesh: {fileID: 4300000, guid: 83983b829365a8440a3eb72455e4ba6c, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1e092cf8e4ea91747a2a53982a232154, type: 3}
 --- !u!65 &65742891233801632
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -18459,18 +18458,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!208 &208693267169474516
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1354036978649454}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.6918205, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.6332057, z: 0}
-  m_TimeToStationary: 0.5

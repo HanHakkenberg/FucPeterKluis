@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33464074158746206}
   - component: {fileID: 23840549697774306}
   - component: {fileID: 65635789482134898}
-  - component: {fileID: 208560351770691484}
   m_Layer: 0
   m_Name: Chair (1)
   m_TagString: Untagged
@@ -65,8 +64,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1684675535501908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.285, y: 0.75, z: -33.317}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 26.285, y: 0.75, z: -40.437}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4525743519809534}
   m_Father: {fileID: 0}
@@ -126,18 +125,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.55626744, y: 0.533191, z: 1.1035306}
   m_Center: {x: -0.2000002, y: 0.20161779, z: 0.55113286}
---- !u!208 &208560351770691484
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1199865682238542}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.27800003, y: 0.26700002, z: 0.55200005}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -0.2, y: 0.202, z: 0.551}
-  m_TimeToStationary: 0.5

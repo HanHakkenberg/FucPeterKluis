@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4264633956155882}
   - component: {fileID: 136392212799721850}
-  - component: {fileID: 208057051972656680}
   - component: {fileID: 114610168089195710}
   - component: {fileID: 135245525483292108}
   m_Layer: 0
@@ -273,18 +272,3 @@ CapsuleCollider:
   m_Height: 6.499145
   m_Direction: 1
   m_Center: {x: 6.326717e-11, y: 2.4839041, z: 0.10120809}
---- !u!208 &208057051972656680
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516369149518214}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 0.7656686, y: 3.2495725, z: 0.7656686}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 6.326717e-11, y: 2.483904, z: 0.1012081}
-  m_TimeToStationary: 0.5
