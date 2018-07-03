@@ -86,13 +86,15 @@ GameObject:
   - component: {fileID: 33253663317505106}
   - component: {fileID: 23859135875322464}
   - component: {fileID: 95351729161114920}
+  - component: {fileID: 136499653968297322}
+  - component: {fileID: 114862979670688058}
   m_Layer: 0
   m_Name: Pine_Tree (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1841819899240448
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +104,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4371098178929492}
   - component: {fileID: 114275005379462396}
-  - component: {fileID: 208134261063240720}
   - component: {fileID: 114896503432782662}
   - component: {fileID: 136347876891436226}
   - component: {fileID: 95309444955637072}
@@ -477,7 +478,7 @@ Animator:
   m_GameObject: {fileID: 1829503163256800}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -501,7 +502,7 @@ MonoBehaviour:
   resourceDrops:
   - {fileID: 0}
   type: 0
-  toughness: 1
+  toughness: 4
   myAnimator: {fileID: 95309444955637072}
   berries: 0
   berryChild: {fileID: 0}
@@ -523,6 +524,25 @@ MonoBehaviour:
   whenToPlay: 0
   isResource: 1
   source: {fileID: 0}
+--- !u!114 &114862979670688058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829503163256800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8120e819068688d41aa3b68a791d840d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myResource: {fileID: 11400000, guid: 0541fb7249f7971449b0b880da727173, type: 2}
+  resourceDrops: []
+  type: 0
+  toughness: 2
+  myAnimator: {fileID: 95351729161114920}
+  berries: 0
+  berryChild: {fileID: 0}
+  berryGrowTime: 7
 --- !u!114 &114896503432782662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -554,10 +574,23 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1
+  m_Radius: 1.3
   m_Height: 6.180215
   m_Direction: 1
   m_Center: {x: 0, y: 2.3638039, z: 0}
+--- !u!136 &136499653968297322
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829503163256800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.3
+  m_Height: 40
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 15.68}
 --- !u!198 &198349147492773262
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -4947,18 +4980,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!208 &208134261063240720
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1841819899240448}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 1, y: 3.0901074, z: 1}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 2.363804, z: 0}
-  m_TimeToStationary: 0.1

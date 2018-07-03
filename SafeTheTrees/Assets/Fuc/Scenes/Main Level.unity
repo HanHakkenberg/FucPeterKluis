@@ -61555,6 +61555,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 20248189778654390, guid: 7212d78e4c2fe504d999cae3bf6566c8,
+        type: 2}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20248189778654390, guid: 7212d78e4c2fe504d999cae3bf6566c8,
+        type: 2}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20248189778654390, guid: 7212d78e4c2fe504d999cae3bf6566c8,
+        type: 2}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7212d78e4c2fe504d999cae3bf6566c8, type: 2}
   m_IsPrefabParent: 0
@@ -84531,8 +84546,8 @@ MonoBehaviour:
   myText: {fileID: 594171231}
   interactorImage: {fileID: 515887301}
   islandSize: 1000
-  xSize: 75
-  ySize: 75
+  xSize: 65
+  ySize: 65
   xStepSize: 3.375
   yStepSize: 1.95
   tile: {fileID: 1802327301417490, guid: 62059ca1e7cc5494496d9366e81bdb93, type: 2}
@@ -104244,6 +104259,27 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2092777014}
+--- !u!1 &2095295393 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1790278854663668, guid: 7212d78e4c2fe504d999cae3bf6566c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1507023782}
+--- !u!114 &2095295402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095295393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: b745ad967acb01b4d9393dcf2ee65e59, type: 2}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &2108389226
 GameObject:
   m_ObjectHideFlags: 0
