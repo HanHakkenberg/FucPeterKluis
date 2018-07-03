@@ -371,8 +371,6 @@ GameObject:
   - component: {fileID: 54713424893511188}
   - component: {fileID: 114703748563007714}
   - component: {fileID: 82538771130303422}
-  - component: {fileID: 114790067557135030}
-  - component: {fileID: 114414409503132882}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1101,7 +1099,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338463609494804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 171.97533, y: -0.15445662, z: 196.36763}
+  m_LocalPosition: {x: 121.28077, y: 0.52, z: 139.14722}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4684037110765824}
@@ -2275,25 +2273,6 @@ MonoBehaviour:
   waiting: 0
   use: 0
   gatherRange: 2.5
---- !u!114 &114414409503132882
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1338463609494804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2615d2e427d96eb48bd3d8976a991dda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 750
-  rotateSpeed: 16
-  moveLayermask:
-    serializedVersion: 2
-    m_Bits: 0
-  walking: 0
-  anim: {fileID: 95551297722821814}
-  player: {fileID: 1338463609494804}
 --- !u!114 &114433323077407458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2357,23 +2336,6 @@ MonoBehaviour:
   waiting: 0
   use: 0
   gatherRange: 2.5
---- !u!114 &114790067557135030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1338463609494804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a65d14b7d8ab84a92932ca234bada7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: 827738235cd05ff4ca3c28add5510ef3, type: 3}
-  clipToPlayIndex: 0
-  whenToPlay: 1
-  isResource: 0
-  source: {fileID: 0}
 --- !u!114 &114814101911508376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2419,7 +2381,7 @@ MonoBehaviour:
   hungerBar: {fileID: 0}
   thirstBar: {fileID: 0}
   healthBar: {fileID: 0}
-  mega: {fileID: 0}
+  mega: {fileID: 1964729294830520, guid: 33593e73993e74b4c84c7badeb576624, type: 2}
 --- !u!136 &136896926811819124
 CapsuleCollider:
   m_ObjectHideFlags: 1
