@@ -71,6 +71,7 @@ public class SettingsMenu : MonoBehaviour {
 
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
     }
 
     public void SetVolume(float volume)
@@ -81,6 +82,7 @@ public class SettingsMenu : MonoBehaviour {
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        Debug.Log(QualitySettings.GetQualityLevel());
     }
 
     public void SetFullscreen(bool isFullscreen)
