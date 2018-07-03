@@ -85,8 +85,8 @@ public class PlayerMovement : MonoBehaviour {
 
        
         
-            float x = Input.GetAxis("Horizontal");
-            float y = Input.GetAxis("Vertical");
+            float x = Input.GetAxisRaw("Horizontal");
+            float y = Input.GetAxisRaw("Vertical");
 
             Vector3 movement = new Vector3(x, 0.0F, y);
         
@@ -149,6 +149,7 @@ public class PlayerMovement : MonoBehaviour {
             if(Input.GetKeyUp("w") || Input.GetKeyUp("a" )|| Input.GetKeyUp("s") || Input.GetKeyUp("d"))
             {
                 anim.SetBool("Playerwalk", false);
+                rb.velocity = Vector3.zero;
             }
         }
 

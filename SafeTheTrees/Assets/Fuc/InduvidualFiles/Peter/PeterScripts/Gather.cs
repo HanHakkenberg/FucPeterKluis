@@ -11,9 +11,14 @@ public class Gather : Weapon {
 
     public bool waiting;
     public bool use;
+    public float gatherRange = 2.5F;
+
+    private GameObject player;
+    private Collider targetResource;
 	// Use this for initialization
 	void Start () {
 
+        player = GameObject.FindGameObjectWithTag("Player");
         playerMov = FindObjectOfType<PlayerMovement>();
         tool = equippable;
         Inventory.itemInHand = tool;
@@ -23,29 +28,34 @@ public class Gather : Weapon {
 	void Update () {
         if (Input.GetMouseButtonDown(0) && playerMov.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle"))
         {
-            Use();
+            RaycastHit hit;
+            if(Physics.Raycast(player.transform.position, player.transform.forward, out hit, gatherRange))
+            {
+                if(hit.transform.tag == "Resource")
+                {
+                    //Debug.Log("Hit" + hit.transform);
+                    targetResource = hit.collider;
+                   // Debug.Log("Hit resource " + targetResource);
+                    
+                    Use();
+                }
+            }
         }
     }
 
-    public void OnTriggerEnter(Collider col)
+    public void GetResource(Collider col)
     {
+        //Debug.Log("Getting resource");
         //Debug.Log(col.name);
 
-        if (use)
-        {
-            if (col.transform.tag == "Resource")
-            {
-                col.transform.GetComponent<Resource>().Harvest(this);
-            }
-          
-
-        }
+        col.transform.GetComponent<Resource>().Harvest(this);
+        Debug.Log("Harvest");
     }
 
     public override void Use()
     {
 
-       
+      //  Debug.Log("Use start");
         if (!waiting)
         {
             use = true;
@@ -65,13 +75,15 @@ public class Gather : Weapon {
             }
           
             beingUsed = true;
-            StartCoroutine(WaitForAnim());
+            StartCoroutine(WaitForAnim(targetResource));
+           // Debug.Log("Use end");
         }
       
     }
 
-    private IEnumerator WaitForAnim()
+    private IEnumerator WaitForAnim(Collider col)
     {
+       // Debug.Log("Start couran");
         waiting = true;
         yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length);
         use = false;
@@ -85,8 +97,12 @@ public class Gather : Weapon {
         {
             playerMov.anim.SetBool("Playergrab", false);
         }
+
+        GetResource(col);
           
         beingUsed = false;
+      //  Debug.Log("End couran");
         waiting = false;
+
     }
 }
