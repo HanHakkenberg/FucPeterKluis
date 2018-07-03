@@ -43,7 +43,7 @@ public class Builder : MonoBehaviour {
 
             RaycastHit rayHit;
             if(Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out rayHit, 10000, buildRayMask)) {
-                buildRotation += Mathf.RoundToInt(Input.GetAxis("Mouse ScrollWheell") * Time.deltaTime * scrollweelSpeed);
+                buildRotation += Mathf.RoundToInt(Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * scrollweelSpeed);
 
                 DisplayBuild(new Vector3(0, buildRotation, 0), new Vector3(rayHit.point.x,0, rayHit.point.z));
 
