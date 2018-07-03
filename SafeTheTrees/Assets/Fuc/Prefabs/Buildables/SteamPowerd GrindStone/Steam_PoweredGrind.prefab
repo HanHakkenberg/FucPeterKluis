@@ -556,23 +556,11 @@ MonoBehaviour:
     timeToConvert: 0
   validFuelItems:
   - product: {fileID: 0}
-    ingredient: {fileID: 0}
-    timeToConvert: 0
+    ingredient: {fileID: 11400000, guid: 0541fb7249f7971449b0b880da727173, type: 2}
+    timeToConvert: 40
   - product: {fileID: 0}
-    ingredient: {fileID: 0}
-    timeToConvert: 0
-  - product: {fileID: 0}
-    ingredient: {fileID: 0}
-    timeToConvert: 0
-  - product: {fileID: 0}
-    ingredient: {fileID: 0}
-    timeToConvert: 0
-  - product: {fileID: 0}
-    ingredient: {fileID: 0}
-    timeToConvert: 0
-  - product: {fileID: 0}
-    ingredient: {fileID: 0}
-    timeToConvert: 0
+    ingredient: {fileID: 11400000, guid: ef3d3184382b84e4697540f1368c9e18, type: 2}
+    timeToConvert: 20
   craftSlots:
   - {fileID: 0}
   - {fileID: 0}
