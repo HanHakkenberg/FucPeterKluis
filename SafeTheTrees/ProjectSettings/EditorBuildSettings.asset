@@ -12,6 +12,11 @@ EditorBuildSettings:
     path: Assets/Fuc/Scenes/MainMenu.unity
     guid: a3fd9c221beac3c4b9792b22b5dc9c20
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Fuc/Scenes/Main Level.unity
     guid: a9bb254eab8755840960355c145a1e68
+=======
+    path: Assets/Fuc/Scenes/Main 1/Main Level.unity
+    guid: e26fcef9158c7ae45827a1b15551c2bf
+>>>>>>> 9f5c9eb1c188aab7b770fd2c250a4aacae1bb584
   m_configObjects: {}
