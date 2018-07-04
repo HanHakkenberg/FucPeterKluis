@@ -459,7 +459,7 @@ public class EcoManager : MonoBehaviour {
         for (int i = 0; i < -pollution / -basePollution * 10; i++) {
             if (driedTiles.Count - 1 > 0) {
                 int selected = Random.Range(0, driedTiles.Count - 1);
-                driedTiles[selected].myTile.ChangeMaterial(GroundState.Grass, "No Water Nearby To Stop The Fire");
+                driedTiles[selected].myTile.ChangeMaterial(GroundState.Grass, "The Air Is Moist Or There Is A Water Source Nearby.w");
                 grassTiles.Add(driedTiles[selected]);
                 driedTiles.RemoveAt(selected);
             }

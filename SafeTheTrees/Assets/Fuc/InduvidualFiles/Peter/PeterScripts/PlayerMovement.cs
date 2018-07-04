@@ -104,7 +104,7 @@ public class PlayerMovement : MonoBehaviour {
 
                 Vector3 moveRel = transform.TransformDirection(movement);
 
-            player.transform.rotation = Quaternion.Lerp(player.transform.rotation, Quaternion.LookRotation(moveRel), rotateSpeed * Time.deltaTime);
+            player.transform.rotation = Quaternion.Slerp(player.transform.rotation, Quaternion.LookRotation(moveRel), rotateSpeed * Time.deltaTime);
 
             if (!anim.GetBool("Playerwalk"))
             {
