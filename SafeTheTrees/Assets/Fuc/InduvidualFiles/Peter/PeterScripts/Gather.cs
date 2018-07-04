@@ -15,6 +15,7 @@ public class Gather : Weapon {
 
     private GameObject player;
     private Collider targetResource;
+    private bool hitResource;
 	// Use this for initialization
 	void Start () {
 
@@ -40,6 +41,29 @@ public class Gather : Weapon {
                     Use();
                 }
             }
+        }
+
+
+        if (Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand)
+        {
+
+            if (Input.GetMouseButton(0))
+            {
+                if (hitResource)
+                {
+                   
+
+                    if (!waiting)
+                    {
+                        playerMov.anim.SetBool("Playeraxestop", false);
+                        playerMov.anim.SetBool("Playeraxe", true);
+                        playerMov.anim.SetBool("Player_AxeSwing", true);
+                        StartCoroutine(WaitForAnim(targetResource));
+                    }
+
+                }
+            }
+
         }
     }
 
@@ -80,12 +104,16 @@ public class Gather : Weapon {
             StartCoroutine(WaitForAnim(targetResource));
            // Debug.Log("Use end");
         }
+   
+           
+   
       
     }
 
     private IEnumerator AnimSoundTiming()
     {
         yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .30F);
+        hitResource = true;
         GetResource(targetResource);
 
     }
