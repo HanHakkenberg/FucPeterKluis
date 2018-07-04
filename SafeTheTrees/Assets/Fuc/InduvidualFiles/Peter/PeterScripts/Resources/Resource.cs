@@ -39,7 +39,11 @@ public class Resource : MonoBehaviour {
             }
             if (toughness > 0) {
                 toughness--;
-                myAnimator.SetTrigger("Harvest");
+
+                if(myAnimator != null)
+                {
+                    myAnimator.SetTrigger("Harvest");
+                }
             } else {
                 g.use = false;
                 g.beingUsed = false;
