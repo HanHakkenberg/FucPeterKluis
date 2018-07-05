@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33833538607400650}
   - component: {fileID: 23594293993370310}
   m_Layer: 0
-  m_Name: Coal
+  m_Name: ToGather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4329218916473766}
   - component: {fileID: 65775142350481210}
-  - component: {fileID: 208930836141888466}
+  - component: {fileID: 114947809639052492}
+  - component: {fileID: 95137733054964416}
   m_Layer: 0
   m_Name: Coal
   m_TagString: Resource
@@ -126,18 +127,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 3.7515354}
   m_Center: {x: 1.7718372e-13, y: 3.7338354e-14, z: 1.3757677}
---- !u!208 &208930836141888466
-NavMeshObstacle:
+--- !u!95 &95137733054964416
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648020493030778}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.25, y: 0.25, z: 0.25}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114947809639052492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648020493030778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8120e819068688d41aa3b68a791d840d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myResource: {fileID: 0}
+  resourceDrops: []
+  type: 3
+  toughness: 1
+  myAnimator: {fileID: 0}
+  berries: 0
+  berryChild: {fileID: 0}
+  berryGrowTime: 7

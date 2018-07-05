@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4486892280061600}
   m_Layer: 0
-  m_Name: Coal (1)
+  m_Name: ToGather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,8 +68,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4465908871359348}
-  - component: {fileID: 208631655458022092}
   - component: {fileID: 65417968496989702}
+  - component: {fileID: 114329822751570766}
+  - component: {fileID: 95480064139801696}
   m_Layer: 0
   m_Name: Char Coal
   m_TagString: Resource
@@ -79,7 +80,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1752415048583940
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -94,7 +95,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1811965503090362
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -135,8 +136,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4486892280061600}
-  - {fileID: 4633844988513674}
-  - {fileID: 4739704148163808}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -151,6 +150,8 @@ Transform:
   m_LocalScale: {x: 0.6506045, y: 0.65060437, z: 0.65060437}
   m_Children:
   - {fileID: 4870366324936102}
+  - {fileID: 4633844988513674}
+  - {fileID: 4739704148163808}
   m_Father: {fileID: 4465908871359348}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -50.215004, y: 0, z: -90.00001}
@@ -173,12 +174,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1811965503090362}
-  m_LocalRotation: {x: 0.20414057, y: -0.30904406, z: 0.7750562, w: 0.5119633}
-  m_LocalPosition: {x: 0.003000006, y: 0.045000017, z: 0.14000034}
-  m_LocalScale: {x: 0.7700005, y: 0.77000034, z: 0.7700001}
+  m_LocalRotation: {x: 0.7147461, y: -0.14610755, z: 0.6700949, w: -0.13697994}
+  m_LocalPosition: {x: 0.008514234, y: 0.33199927, z: 0.14109923}
+  m_LocalScale: {x: 1.1835165, y: 1.1835161, z: 1.1835151}
   m_Children:
   - {fileID: 4730447208037778}
-  m_Father: {fileID: 4465908871359348}
+  m_Father: {fileID: 4486892280061600}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 43.478, y: 0, z: 113.107}
 --- !u!4 &4730447208037778
@@ -200,12 +201,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1752415048583940}
-  m_LocalRotation: {x: 0.22949806, y: 0.8898123, z: 0.02730671, w: 0.3934707}
-  m_LocalPosition: {x: -0.0069999993, y: -0.021999955, z: 0.07700062}
-  m_LocalScale: {x: 0.65060496, y: 0.6506043, z: 0.65060484}
+  m_LocalRotation: {x: -0.29654384, y: 0.826552, z: 0.467541, w: -0.1013851}
+  m_LocalPosition: {x: 0, y: 0.31662866, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4617177678668628}
-  m_Father: {fileID: 4465908871359348}
+  m_Father: {fileID: 4486892280061600}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 7.5860004, y: 134.02301, z: 25.703001}
 --- !u!4 &4870366324936102
@@ -359,18 +360,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.986513, z: 1}
   m_Center: {x: 0, y: 1.9932566, z: 0}
---- !u!208 &208631655458022092
-NavMeshObstacle:
+--- !u!95 &95480064139801696
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1674707781274928}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.25, y: 0.25, z: 0.25}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0.09}
-  m_TimeToStationary: 0.5
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114329822751570766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1674707781274928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8120e819068688d41aa3b68a791d840d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myResource: {fileID: 11400000, guid: 0541fb7249f7971449b0b880da727173, type: 2}
+  resourceDrops: []
+  type: 3
+  toughness: 1
+  myAnimator: {fileID: 0}
+  berries: 0
+  berryChild: {fileID: 0}
+  berryGrowTime: 7

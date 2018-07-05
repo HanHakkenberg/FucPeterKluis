@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4604190615875738}
   - component: {fileID: 114105691366175422}
   - component: {fileID: 65069162868862312}
+  - component: {fileID: 95040100245719654}
   m_Layer: 0
   m_Name: Bucket
   m_TagString: Resource
@@ -39,7 +40,7 @@ GameObject:
   - component: {fileID: 33841652213943142}
   - component: {fileID: 23714647285756046}
   m_Layer: 0
-  m_Name: Bucket
+  m_Name: ToGather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,6 +127,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.199943, y: 16.257124, z: 2.5163898}
   m_Center: {x: 0, y: 7.62856, z: 0}
+--- !u!95 &95040100245719654
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1588220828065980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114105691366175422
 MonoBehaviour:
   m_ObjectHideFlags: 1

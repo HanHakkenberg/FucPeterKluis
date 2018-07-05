@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4428757554374386}
   - component: {fileID: 114151948751320868}
   - component: {fileID: 65791217835607726}
+  - component: {fileID: 95098565343026524}
   m_Layer: 0
   m_Name: Hamer
   m_TagString: Resource
@@ -39,7 +40,7 @@ GameObject:
   - component: {fileID: 33744586686888950}
   - component: {fileID: 23381161527249818}
   m_Layer: 0
-  m_Name: Smith_Hammer
+  m_Name: ToGather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,6 +127,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.199943, y: 16.257124, z: 2.5163898}
   m_Center: {x: 0, y: 7.62856, z: 0}
+--- !u!95 &95098565343026524
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1278287272478842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114151948751320868
 MonoBehaviour:
   m_ObjectHideFlags: 1
