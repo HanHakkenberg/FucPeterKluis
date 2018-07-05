@@ -20,7 +20,7 @@ MonoBehaviour:
   myButtons:
   - Drop
   - Equipe
-  itemDiscription: This is a axe
+  itemDiscription: This is a axe to chop wood with.
   equippable: {fileID: 11400000}
   itemType: 5
   damage: 10

@@ -18,6 +18,6 @@ MonoBehaviour:
   placeAbleYoffset: 0
   furniture: 0
   myButtons: []
-  itemDiscription: wabfbauifbwaiubgwaiubg
+  itemDiscription: I can plant these on fertile ground and grow more.
   equippable: {fileID: 0}
   itemType: 6

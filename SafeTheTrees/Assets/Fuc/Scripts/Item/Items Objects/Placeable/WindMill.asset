@@ -19,6 +19,6 @@ MonoBehaviour:
   furniture: 0
   myButtons:
   - Drop
-  itemDiscription: Whis I A WindMill Grinder.
+  itemDiscription: This is a windmill that grinds wheats with the power of wind.
   equippable: {fileID: 11400000, guid: 9f7910d8b54dcab428f40dabd65c8f17, type: 2}
   itemType: 0

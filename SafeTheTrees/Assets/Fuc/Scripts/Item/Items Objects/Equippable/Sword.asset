@@ -20,7 +20,7 @@ MonoBehaviour:
   myButtons:
   - Equipe
   - Drop
-  itemDiscription: Sharp As A Sharp Knife.
+  itemDiscription: Maybe this is not useable.
   equippable: {fileID: 11400000}
   itemType: 5
   damage: 20

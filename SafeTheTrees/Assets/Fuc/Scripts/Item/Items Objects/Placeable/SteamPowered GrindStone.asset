@@ -18,6 +18,6 @@ MonoBehaviour:
   placeAbleYoffset: 0
   furniture: 0
   myButtons: []
-  itemDiscription: This Grinds Wead And Turnes it Into Flower
+  itemDiscription: This grinds wead and turnes it into flower.
   equippable: {fileID: 0}
   itemType: 0
