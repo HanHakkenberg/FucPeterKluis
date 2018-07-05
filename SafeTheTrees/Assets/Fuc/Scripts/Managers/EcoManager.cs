@@ -92,8 +92,7 @@ public class EcoManager : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown("c")) {
-            pollution = -1;
-            AddPollution(0);
+            AddPollution(100);
             polutionCheck = 0.5f;
         }
     }

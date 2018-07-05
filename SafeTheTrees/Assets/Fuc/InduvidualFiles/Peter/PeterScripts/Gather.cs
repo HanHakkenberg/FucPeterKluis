@@ -60,6 +60,9 @@ public class Gather : Weapon {
 
     public void GetResource(Collider col) {
         if (col != null) {
+            if (myPartical != null) {
+                myPartical.Play();
+            }
             col.transform.GetComponent<Resource>().Harvest(this);
         }
     }
@@ -89,10 +92,7 @@ public class Gather : Weapon {
     }
 
     private IEnumerator AnimSoundTiming() {
-        if (myPartical != null) {
-            myPartical.Play();
-        }
-        yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .40F);
+        yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .30F);
         hitResource = true;
         GetResource(targetResource);
 
@@ -102,7 +102,7 @@ public class Gather : Weapon {
         // Debug.Log("Start couran");
         waiting = true;
         StartCoroutine(AnimSoundTiming());
-        yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - 0.35f);
         use = false;
         if (Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand) {
             playerMov.anim.SetBool("Player_AxeSwing", false);
