@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 
     public Texture2D axeCursor;
     public Texture2D pickCursor;
+    public Texture2D handCursor;
     void Awake() {
         if(instance == null)
         {
