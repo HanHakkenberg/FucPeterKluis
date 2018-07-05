@@ -60,9 +60,6 @@ public class Gather : Weapon {
 
     public void GetResource(Collider col) {
         if (col != null) {
-            if (myPartical != null) {
-                myPartical.Play();
-            }
             col.transform.GetComponent<Resource>().Harvest(this);
         }
     }
@@ -92,7 +89,10 @@ public class Gather : Weapon {
     }
 
     private IEnumerator AnimSoundTiming() {
-        yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .30F);
+        if (myPartical != null) {
+            myPartical.Play();
+        }
+        yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .40F);
         hitResource = true;
         GetResource(targetResource);
 
