@@ -124,7 +124,9 @@ public class Inventory : MonoBehaviour {
             itemToDrop.RemoveItem();
             InspectorReset();
 
+            if(ToDrop != null){
             AddToDropTimer(itemToDrop.myItem.itemName, ToDrop);
+            }
         }
 
     }

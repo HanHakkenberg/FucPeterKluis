@@ -53,8 +53,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1025877609990912}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.81, z: 12.137}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 106.351, y: 0.208, z: 126.214}
+  m_LocalScale: {x: 0.2659588, y: 0.2659588, z: 0.2659588}
   m_Children:
   - {fileID: 4892440195030760}
   m_Father: {fileID: 0}
@@ -67,8 +67,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1969708140007062}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.034683, y: 7.67, z: 0.055566}
-  m_LocalScale: {x: 0.2659588, y: 0.2659588, z: 0.2659588}
+  m_LocalPosition: {x: 0.034683, y: 0, z: 0.055566}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4678201430849568}
   m_RootOrder: 0
@@ -125,8 +125,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2041248, y: 1.0087309, z: 0.9407368}
-  m_Center: {x: 0.01671666, y: 7.9781833, z: 0.056690216}
+  m_Size: {x: 1.2041248, y: 1.3555183, z: 0.9407368}
+  m_Center: {x: 0.01671666, y: 0.24283028, z: 0.056690216}
 --- !u!95 &95939673954297974
 Animator:
   serializedVersion: 3
@@ -159,8 +159,8 @@ MonoBehaviour:
   myResource: {fileID: 11400000, guid: d3208cce7ed7cc6428d942ce0b365c75, type: 2}
   resourceDrops: []
   type: 3
-  toughness: 1
-  myAnimator: {fileID: 0}
+  toughness: 0
+  myAnimator: {fileID: 95939673954297974}
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
