@@ -36,6 +36,10 @@ public class Resource : MonoBehaviour {
         {
             Cursor.SetCursor(gm.pickCursor, Vector2.zero, CursorMode.Auto);
         }
+        else if (type == Equippable.CanGather.HandGather)
+        {
+            Cursor.SetCursor(gm.handCursor, Vector2.zero, CursorMode.Auto);
+        }
     }
 
     public void OnMouseExit()
