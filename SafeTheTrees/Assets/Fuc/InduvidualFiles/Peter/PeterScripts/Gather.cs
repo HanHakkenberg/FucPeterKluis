@@ -6,7 +6,6 @@ public class Gather : Weapon {
 
     public Equippable tool;
 
-
     public PlayerMovement playerMov;
 
     public bool waiting;
@@ -16,45 +15,36 @@ public class Gather : Weapon {
     private GameObject player;
     private Collider targetResource;
     private bool hitResource;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
 
         player = GameObject.FindGameObjectWithTag("Player");
         playerMov = FindObjectOfType<PlayerMovement>();
         tool = equippable;
         Inventory.itemInHand = tool;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetMouseButtonDown(0) && playerMov.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle"))
-        {
+    }
+
+    // Update is called once per frame
+    void Update() {
+        if (Input.GetMouseButtonDown(0)&& playerMov.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle")) {
             RaycastHit hit;
-            if(Physics.Raycast(player.transform.position, player.transform.forward, out hit, gatherRange))
-            {
-                if(hit.transform.tag == "Resource")
-                {
+            if (Physics.Raycast(player.transform.position, player.transform.forward, out hit, gatherRange)) {
+                if (hit.transform.tag == "Resource") {
                     //Debug.Log("Hit" + hit.transform);
                     targetResource = hit.collider;
-                   // Debug.Log("Hit resource " + targetResource);
-                    
+                    // Debug.Log("Hit resource " + targetResource);
+
                     Use();
                 }
             }
         }
 
+        if (Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand) {
 
-        if (Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand)
-        {
+            if (Input.GetMouseButton(0)) {
+                if (hitResource) {
 
-            if (Input.GetMouseButton(0))
-            {
-                if (hitResource)
-                {
-                   
-
-                    if (!waiting)
-                    {
+                    if (!waiting) {
                         playerMov.anim.SetBool("Playeraxestop", false);
                         playerMov.anim.SetBool("Playeraxe", true);
                         playerMov.anim.SetBool("Player_AxeSwing", true);
@@ -67,78 +57,59 @@ public class Gather : Weapon {
         }
     }
 
-    public void GetResource(Collider col)
-    {
-        //Debug.Log("Getting resource");
-        //Debug.Log(col.name);
-
-        col.transform.GetComponent<Resource>().Harvest(this);
-        Debug.Log("Harvest");
+    public void GetResource(Collider col) {
+        if (col != null) {
+            col.transform.GetComponent<Resource>().Harvest(this);
+        }
     }
 
-    public override void Use()
-    {
+    public override void Use() {
 
-      //  Debug.Log("Use start");
-        if (!waiting)
-        {
+        //  Debug.Log("Use start");
+        if (!waiting) {
             use = true;
 
-            if(Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand)
-            {
+            if (Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand) {
                 playerMov.anim.SetBool("Playeraxestop", false);
                 playerMov.anim.SetBool("Playeraxe", true);
                 playerMov.anim.SetBool("Player_AxeSwing", true);
 
-
-            }
-            else
-            {
-                if (!playerMov.anim.GetBool("Playergrab"))
-                {
+            } else {
+                if (!playerMov.anim.GetBool("Playergrab")) {
                     playerMov.anim.SetBool("Playergrab", true);
                 }
             }
-          
+
             beingUsed = true;
             StartCoroutine(WaitForAnim(targetResource));
-           // Debug.Log("Use end");
+            // Debug.Log("Use end");
         }
-   
-           
-   
-      
+
     }
 
-    private IEnumerator AnimSoundTiming()
-    {
+    private IEnumerator AnimSoundTiming() {
         yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .30F);
         hitResource = true;
         GetResource(targetResource);
 
     }
 
-    private IEnumerator WaitForAnim(Collider col)
-    {
-       // Debug.Log("Start couran");
+    private IEnumerator WaitForAnim(Collider col) {
+        // Debug.Log("Start couran");
         waiting = true;
         StartCoroutine(AnimSoundTiming());
         yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length);
         use = false;
-        if (Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand)
-        {
+        if (Inventory.itemInHand != playerMov.player.GetComponent<Player>().hand) {
             playerMov.anim.SetBool("Player_AxeSwing", false);
             playerMov.anim.SetBool("Playeraxestop", true);
             playerMov.anim.SetBool("Playeraxe", false);
-        }
-        else
-        {
+        } else {
             playerMov.anim.SetBool("Playergrab", false);
         }
 
-
         beingUsed = false;
-      //  Debug.Log("End couran");
+        //  Debug.Log("End couran");
         waiting = false;
 
     }
