@@ -44718,7 +44718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588c61d93ecc59544911f69eec16609d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myItem: {fileID: 11400000, guid: f0e9f0bb40342364880f372225c3106f, type: 2}
+  myItem: {fileID: 0}
   itemImage: {fileID: 1192929978}
   myType: 0
   slotAnimator: {fileID: 1156908193}
@@ -63858,7 +63858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b643bb0806d2834fbfcb172d9e8a6a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myItem: {fileID: 11400000, guid: ebd7fb140edfa5f438ed4027a7c2ebd9, type: 2}
+  myItem: {fileID: 0}
   itemImage: {fileID: 508444394}
   myType: 0
   slotAnimator: {fileID: 1534904187}
@@ -83202,11 +83202,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1716694868}
@@ -103240,7 +103240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588c61d93ecc59544911f69eec16609d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myItem: {fileID: 11400000, guid: ca64d062b3a9549438a2cd951705c04a, type: 2}
+  myItem: {fileID: 0}
   itemImage: {fileID: 1323867437}
   myType: 0
   slotAnimator: {fileID: 2125980006}

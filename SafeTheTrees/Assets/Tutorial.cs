@@ -15,20 +15,20 @@ public class Tutorial : MonoBehaviour {
 			if (Input.GetButton("Inventory")) {
 				myAnimator.SetInteger("l", myAnimator.GetInteger("l")+ 1);
 			} else {
-				myText.text = "Pick up the items and open the inventory";
+				myText.text = "Pick up the items and press E to open the inventory";
 			}
 		} else {
-			myText.text = "Craft a pickaxe and cut down the tree";
-		}
-
-		if (Input.GetMouseButtonDown(0)&& myAnimator.GetInteger("l")>= 0) {
-			myAnimator.SetInteger("l", myAnimator.GetInteger("l")+ 1);
-			if (myAnimator.GetInteger("l")>= 4) {
-				firstArrow.SetActive(true);
-				Destroy(obj);
-				SecondArrow.SetActive(true);
-				Destroy(this);
+			myText.text = "Craft a axe and cut down the tree";
+			if (Input.GetMouseButtonDown(0)) {
+				myAnimator.SetInteger("l", myAnimator.GetInteger("l")+ 1);
+				if (myAnimator.GetInteger("l")>= 4) {
+					firstArrow.SetActive(true);
+					Destroy(obj);
+					SecondArrow.SetActive(true);
+					Destroy(this);
+				}
 			}
 		}
+
 	}
 }
