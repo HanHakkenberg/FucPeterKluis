@@ -95,10 +95,9 @@ public class Gather : Weapon {
         yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .30F);
         hitResource = true;
 
-        if (!playerMov.anim.GetBool("Playeraxestop"))
-        {
+        
             GetResource(targetResource);
-        }
+     
 
     }
 
