@@ -345,6 +345,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &96470512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96470510}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &127132443
 Prefab:
   m_ObjectHideFlags: 0
@@ -429,6 +447,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a7cc28786f9598246af5c035bdbc199c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &144102172 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1162830135346854, guid: a7cc28786f9598246af5c035bdbc199c,
+    type: 2}
+  m_PrefabInternal: {fileID: 144102171}
+--- !u!95 &144102173
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144102172}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &145762579
 Prefab:
   m_ObjectHideFlags: 0
@@ -567,6 +608,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 883ee77f69258e144b58a38e40c10ee2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &170300249 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1278287272478842, guid: 883ee77f69258e144b58a38e40c10ee2,
+    type: 2}
+  m_PrefabInternal: {fileID: 170300248}
+--- !u!95 &170300250
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170300249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &178720324
 Prefab:
   m_ObjectHideFlags: 0
@@ -10220,6 +10284,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &417294588
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 417294586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &453502775
 Prefab:
   m_ObjectHideFlags: 0
@@ -10710,6 +10792,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &603382787
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 603382785}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &684370434
 Prefab:
   m_ObjectHideFlags: 0
@@ -10752,6 +10852,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e0c84e8abd05b44a8f357aeb03b7bb8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &684370435 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1834299728440404, guid: 8e0c84e8abd05b44a8f357aeb03b7bb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 684370434}
+--- !u!95 &684370436
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 684370435}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &707227085
 Prefab:
   m_ObjectHideFlags: 0
@@ -10964,6 +11087,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fddbb139b321944ba1d2d1c14f6ec92, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &886878944 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1588220828065980, guid: 5fddbb139b321944ba1d2d1c14f6ec92,
+    type: 2}
+  m_PrefabInternal: {fileID: 886878943}
+--- !u!95 &886878945
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886878944}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &941986481
 Prefab:
   m_ObjectHideFlags: 0
@@ -11031,6 +11177,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &941986484
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 941986482}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &950138069
 Prefab:
   m_ObjectHideFlags: 0
@@ -15271,6 +15435,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.53841615, y: 0.6114768, z: 6.6656165}
   m_Center: {x: -0.014612794, y: 0.025537133, z: 3.332809}
+--- !u!95 &973328114
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 973328111}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &996563462
 GameObject:
   m_ObjectHideFlags: 0
@@ -15834,6 +16016,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90b0949246d1abe4da52dde5e24480cc, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1316152855 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1991610572032658, guid: 90b0949246d1abe4da52dde5e24480cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1316152854}
+--- !u!95 &1316152856
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316152855}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1372935204
 GameObject:
   m_ObjectHideFlags: 0
@@ -16030,6 +16235,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6dfde6d0e7895548a3824259d055c58, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1427936607 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1589470288066934, guid: f6dfde6d0e7895548a3824259d055c58,
+    type: 2}
+  m_PrefabInternal: {fileID: 1427936606}
+--- !u!95 &1427936608
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427936607}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1440376141
 Prefab:
   m_ObjectHideFlags: 0
@@ -16213,6 +16441,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.12771106, z: 1.55}
   m_Center: {x: 0.011769667, y: 0.02156361, z: 0.107519306}
+--- !u!95 &1503833463
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503833460}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1507624578
 Prefab:
   m_ObjectHideFlags: 0
@@ -16255,6 +16501,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31a44294bc7fc7049963c747f1f4aac7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1507624579 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1102846582639366, guid: 31a44294bc7fc7049963c747f1f4aac7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1507624578}
+--- !u!95 &1507624580
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507624579}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1535834345
 Prefab:
   m_ObjectHideFlags: 0
@@ -16406,6 +16675,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &1569408237
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569408235}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1570414815
 Prefab:
   m_ObjectHideFlags: 0
@@ -17482,6 +17769,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &1613468735
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1613468733}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1621542433
 Prefab:
   m_ObjectHideFlags: 0
@@ -17896,6 +18201,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &1797610849
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797610847}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1824692889
 Prefab:
   m_ObjectHideFlags: 0
@@ -18027,6 +18350,29 @@ Prefab:
     - {fileID: 135962297018258716, guid: 54faef0ac8280da4a878e2088326eb6f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 54faef0ac8280da4a878e2088326eb6f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1833414661 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1760463468022694, guid: 54faef0ac8280da4a878e2088326eb6f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1833414660}
+--- !u!95 &1833414662
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1833414661}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1874623620
 GameObject:
   m_ObjectHideFlags: 0
@@ -18404,6 +18750,29 @@ Prefab:
     - {fileID: 208304087625668462, guid: b921e348d4c47cb4bac564a4f300621c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b921e348d4c47cb4bac564a4f300621c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2025955073 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1025877609990912, guid: b921e348d4c47cb4bac564a4f300621c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2025955072}
+--- !u!95 &2025955074
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025955073}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2030157821
 Prefab:
   m_ObjectHideFlags: 0
@@ -18447,6 +18816,29 @@ Prefab:
     - {fileID: 208428584539199280, guid: 629929dbbaedb0e40bffe95cfcb8c296, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 629929dbbaedb0e40bffe95cfcb8c296, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2030157822 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1117627554504758, guid: 629929dbbaedb0e40bffe95cfcb8c296,
+    type: 2}
+  m_PrefabInternal: {fileID: 2030157821}
+--- !u!95 &2030157823
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2030157822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2050594173
 GameObject:
   m_ObjectHideFlags: 0
@@ -18660,6 +19052,24 @@ MonoBehaviour:
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
+--- !u!95 &2124425110
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2124425108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19de6c79654446b46a7c4239ebbf72cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2142564129
 Prefab:
   m_ObjectHideFlags: 0
