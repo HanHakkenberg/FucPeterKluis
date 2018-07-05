@@ -19,6 +19,6 @@ MonoBehaviour:
   furniture: 0
   myButtons:
   - Place
-  itemDiscription: This Is A Campfire
+  itemDiscription: A campfire to cook meat on or to warm my hands.
   equippable: {fileID: 11400000, guid: 9f7910d8b54dcab428f40dabd65c8f17, type: 2}
   itemType: 0

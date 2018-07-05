@@ -18,6 +18,6 @@ MonoBehaviour:
   placeAbleYoffset: 0
   furniture: 0
   myButtons: []
-  itemDiscription: This Is Used To Hit Things Or Humans.
+  itemDiscription: This is used to hit things or humans.
   equippable: {fileID: 11400000, guid: 9f7910d8b54dcab428f40dabd65c8f17, type: 2}
   itemType: 0

@@ -18,6 +18,6 @@ MonoBehaviour:
   placeAbleYoffset: 0
   furniture: 0
   myButtons: []
-  itemDiscription: It's just sticks that've been taped together.
+  itemDiscription: A means to block the way.
   equippable: {fileID: 0}
   itemType: 0

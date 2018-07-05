@@ -18,6 +18,6 @@ MonoBehaviour:
   placeAbleYoffset: 0
   furniture: 0
   myButtons: []
-  itemDiscription: This Can Contain Flower.
+  itemDiscription: This can probably contain grinded flower.
   equippable: {fileID: 11400000, guid: 9f7910d8b54dcab428f40dabd65c8f17, type: 2}
   itemType: 0

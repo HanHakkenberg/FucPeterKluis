@@ -18,6 +18,6 @@ MonoBehaviour:
   placeAbleYoffset: 0
   furniture: 0
   myButtons: []
-  itemDiscription: This Contains Bees And Can Produce Honey.
+  itemDiscription: Bee's help to create more trees and produce honey.
   equippable: {fileID: 11400000, guid: 9f7910d8b54dcab428f40dabd65c8f17, type: 2}
   itemType: 0

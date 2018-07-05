@@ -19,6 +19,6 @@ MonoBehaviour:
   furniture: 0
   myButtons:
   - Drop
-  itemDiscription: Made Of The Tears Of Cows.
+  itemDiscription: A bundle of wood. Chopped from trees.
   equippable: {fileID: 11400000, guid: 9f7910d8b54dcab428f40dabd65c8f17, type: 2}
   itemType: 0

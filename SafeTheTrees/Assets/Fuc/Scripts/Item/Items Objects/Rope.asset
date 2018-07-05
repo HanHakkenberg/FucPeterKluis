@@ -18,6 +18,6 @@ MonoBehaviour:
   placeAbleYoffset: 0
   furniture: 0
   myButtons: []
-  itemDiscription: This Is A Rope. This Is Used To Bind Thing Togather
+  itemDiscription: This is a rope. This Is used to bind things together
   equippable: {fileID: 11400000, guid: 9f7910d8b54dcab428f40dabd65c8f17, type: 2}
   itemType: 0
