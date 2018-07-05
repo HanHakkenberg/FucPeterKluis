@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance;
     public static int worldWidth = 1000;
 
+    public Texture2D axeCursor;
+    public Texture2D pickCursor;
     void Awake() {
         if(instance == null)
         {

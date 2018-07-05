@@ -15,14 +15,32 @@ public class Resource : MonoBehaviour {
     public GameObject berryChild;
     public float berryGrowTime = 7;
 
+    private GameManager gm;
 
 
     private void Start() {
-
+        gm = FindObjectOfType<GameManager>();
         myAnimator = GetComponent<Animator>();
         if (!resourceDrops.Contains(myResource)) {
             resourceDrops.Add(myResource);
         }
+    }
+
+    public void OnMouseOver()
+    {
+        if(type == Equippable.CanGather.WoodGather)
+        {
+            Cursor.SetCursor(gm.axeCursor, Vector2.zero, CursorMode.Auto);
+        }
+        else if (type == Equippable.CanGather.StonesGather)
+        {
+            Cursor.SetCursor(gm.pickCursor, Vector2.zero, CursorMode.Auto);
+        }
+    }
+
+    public void OnMouseExit()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     public void Harvest(Gather g) {
@@ -50,16 +68,22 @@ public class Resource : MonoBehaviour {
                 g.waiting = false;
 
                 int itemsInInv = 0;
-                foreach (Slot s in Inventory.Instance.theInventory) {
+                foreach (Slot s in Inventory.Instance.theInventory)
+                {
 
-                    if (s.myItem == null) {
-                        foreach (Item i in resourceDrops) {
+                    if (s.myItem == null)
+                    {
+                        foreach (Item i in resourceDrops)
+                        {
                             Inventory.Instance.AddItem(i); //Un comment when there is inventory in scene pl0x
+
 
                         }
 
                         break;
-                    } else {
+                    }
+                    else
+                    {
                         itemsInInv++;
                     }
 
@@ -70,7 +94,10 @@ public class Resource : MonoBehaviour {
                     //Drop resource on floor
                 }
                 if (!berries) {
-                    myAnimator.SetBool("Stop", true);
+                    if(myAnimator != null)
+                    {
+                        myAnimator.SetBool("Stop", true);
+                    }
                 } else {
                     berryChild.SetActive(false);
                     if (!isGrowing) {
@@ -80,6 +107,7 @@ public class Resource : MonoBehaviour {
                 }
             }
         }
+
     }
 
     public void DestroyResource() {
