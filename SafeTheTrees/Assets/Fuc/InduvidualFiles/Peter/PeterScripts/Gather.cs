@@ -94,7 +94,11 @@ public class Gather : Weapon {
     private IEnumerator AnimSoundTiming() {
         yield return new WaitForSeconds(playerMov.anim.GetCurrentAnimatorStateInfo(0).length - .30F);
         hitResource = true;
-        GetResource(targetResource);
+
+        if (!playerMov.anim.GetBool("Playeraxestop"))
+        {
+            GetResource(targetResource);
+        }
 
     }
 
