@@ -18270,6 +18270,7 @@ MonoBehaviour:
   axeCursor: {fileID: 2800000, guid: 50b211c01f4655640b5b582883f93c16, type: 3}
   pickCursor: {fileID: 2800000, guid: b26a1cb246b1961498cf3cfee034208b, type: 3}
   handCursor: {fileID: 2800000, guid: 075e12f1f322d2d468a7906b95804d9f, type: 3}
+  interactCursor: {fileID: 2800000, guid: 540558eb866923740b1f6ce16f6e41bc, type: 3}
 --- !u!1001 &1972183159
 Prefab:
   m_ObjectHideFlags: 0

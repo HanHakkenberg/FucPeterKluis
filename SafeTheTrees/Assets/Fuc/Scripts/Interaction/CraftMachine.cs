@@ -257,4 +257,16 @@ public class CraftMachine : Machine {
     void OnTriggerExit(Collider other) {
         EcoManager.instance.interactorImage.SetActive(false);
     }
+
+    public void OnMouseOver()
+    {
+      
+            Cursor.SetCursor(GameManager.instance.interactCursor, Vector2.zero, CursorMode.Auto);
+     
+    }
+
+    public void OnMouseExit()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
 }
