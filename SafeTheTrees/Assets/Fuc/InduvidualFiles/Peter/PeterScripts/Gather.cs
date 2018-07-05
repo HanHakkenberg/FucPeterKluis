@@ -13,6 +13,7 @@ public class Gather : Weapon {
     public float gatherRange = 2.5F;
 
     private GameObject player;
+    public ParticleSystem myPartical;
     private Collider targetResource;
     private bool hitResource;
     // Use this for initialization
@@ -59,6 +60,9 @@ public class Gather : Weapon {
 
     public void GetResource(Collider col) {
         if (col != null) {
+            if (myPartical != null) {
+                myPartical.Play();
+            }
             col.transform.GetComponent<Resource>().Harvest(this);
         }
     }
