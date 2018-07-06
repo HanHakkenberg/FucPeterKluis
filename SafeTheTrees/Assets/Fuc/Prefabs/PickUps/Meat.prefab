@@ -159,8 +159,8 @@ MonoBehaviour:
   myResource: {fileID: 11400000, guid: 03f0933f3102a3d42b436481613e2108, type: 2}
   resourceDrops: []
   type: 3
-  toughness: 1
-  myAnimator: {fileID: 0}
+  toughness: 0
+  myAnimator: {fileID: 95033386738393380}
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7

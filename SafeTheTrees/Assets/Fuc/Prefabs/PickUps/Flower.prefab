@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33760670454929276}
   - component: {fileID: 23382212610585830}
   m_Layer: 0
-  m_Name: Flower (1)
+  m_Name: ToGather
   m_TagString: Resource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,8 +125,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.43375957, y: 0.42407063, z: 6.4}
-  m_Center: {x: 0.0015735477, y: 0.000000007450582, z: 0.050238132}
+  m_Size: {x: 0.43375957, y: 0.42407063, z: 0.57332456}
+  m_Center: {x: 0.0015735477, y: 0.000000014901161, z: 0.07675503}
 --- !u!95 &95763792641912226
 Animator:
   serializedVersion: 3
@@ -159,8 +159,8 @@ MonoBehaviour:
   myResource: {fileID: 11400000, guid: ea49b342b5b18e44ea59349be267b892, type: 2}
   resourceDrops: []
   type: 3
-  toughness: 1
-  myAnimator: {fileID: 0}
+  toughness: 0
+  myAnimator: {fileID: 95763792641912226}
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7

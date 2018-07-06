@@ -358,8 +358,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.986513, z: 1}
-  m_Center: {x: 0, y: 1.9932566, z: 0}
+  m_Size: {x: 0.879092, y: 0.76965356, z: 0.6848202}
+  m_Center: {x: 0.06045401, y: 0.040056944, z: 0.15758991}
 --- !u!95 &95480064139801696
 Animator:
   serializedVersion: 3
@@ -392,8 +392,8 @@ MonoBehaviour:
   myResource: {fileID: 11400000, guid: 0541fb7249f7971449b0b880da727173, type: 2}
   resourceDrops: []
   type: 3
-  toughness: 1
-  myAnimator: {fileID: 0}
+  toughness: 0
+  myAnimator: {fileID: 95480064139801696}
   berries: 0
   berryChild: {fileID: 0}
   berryGrowTime: 7
