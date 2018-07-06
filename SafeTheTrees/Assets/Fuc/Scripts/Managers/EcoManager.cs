@@ -101,7 +101,7 @@ public class EcoManager : MonoBehaviour {
         pollution += PollutionToAdd;
 
         if (basePollution != 0) {
-            pollutionImage.fillAmount = basePollution - (pollution / basePollution);
+            pollutionImage.fillAmount = pollution / basePollution;
         }
 
         if (pollution >= endGamePollution) {

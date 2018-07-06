@@ -21,6 +21,7 @@ public class Inventory : MonoBehaviour {
     public int SelectedToolbarSlot;
 
     [Header("Inventory Inspector")]
+    public GameObject interactorObject;
     public TextMeshProUGUI inspectorItemText;
     public Image inspectorItemImage;
     public List<InspectorButton> buttons = new List<InspectorButton>();
@@ -66,6 +67,14 @@ public class Inventory : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public void EnableInteractor() {
+        interactorObject.SetActive(true);
+    }
+
+    public void DisableInteractor() {
+        interactorObject.SetActive(false);
     }
 
     public void ChangeToolBarSelected() {
@@ -124,8 +133,8 @@ public class Inventory : MonoBehaviour {
             itemToDrop.RemoveItem();
             InspectorReset();
 
-            if(ToDrop != null){
-            AddToDropTimer(itemToDrop.myItem.itemName, ToDrop);
+            if (ToDrop != null) {
+                AddToDropTimer(itemToDrop.myItem.itemName, ToDrop);
             }
         }
 
@@ -181,23 +190,31 @@ public class Inventory : MonoBehaviour {
 
     //Inspects Given Item
     public void InspectItem(Slot itemToInspect) {
-        currentInspected = itemToInspect;
+        if (Input.GetKey(KeyCode.LeftAlt)) {
+            interactorObject.SetActive(true);
 
-        inspectorItemText.text = itemToInspect.myItem.itemDiscription;
+            currentInspected = itemToInspect;
 
-        inspectorItemImage.sprite = itemToInspect.myItem.item2D;
-        inspectorItemImage.enabled = true;
-        for (int i = 0; i < buttons.Count; i++) {
-            buttons[i].myButton.SetActive(false);
-        }
+            inspectorItemText.text = itemToInspect.myItem.itemDiscription;
 
-        for (int b = 0; b < itemToInspect.myItem.myButtons.Count; b++) {
-            for (int bb = 0; bb < buttons.Count; bb++) {
-                if (itemToInspect.myItem.myButtons[b] == buttons[bb].myTag) {
-                    buttons[bb].myButton.SetActive(true);
-                    break;
+            //inspectorItemImage.sprite = itemToInspect.myItem.item2D;
+            //inspectorItemImage.enabled = true;
+            //for (int i = 0; i < buttons.Count; i++) {
+            //    buttons[i].myButton.SetActive(false);
+            //}
+
+            interactorObject.transform.position = Input.mousePosition;
+
+            /*for (int b = 0; b < itemToInspect.myItem.myButtons.Count; b++) {
+                for (int bb = 0; bb < buttons.Count; bb++) {
+                    if (itemToInspect.myItem.myButtons[b] == buttons[bb].myTag) {
+                        buttons[bb].myButton.SetActive(true);
+                        break;
+                    }
                 }
-            }
+            }*/
+        } else {
+            interactorObject.SetActive(false);
         }
     }
 
